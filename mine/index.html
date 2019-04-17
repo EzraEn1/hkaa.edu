@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Display stuff-->
+    <title>Hong Kong Adventist Academy</title>
+    <link rel="shortcut icon" href="./img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+            <!-- Change expand size at navbar-expand-xx -->
+            <a class="navbar-brand" href="/"><img src="./img/logo.png" /></a> <!-- This is out of collapse, keep in mind -->
+            <div class="collapse navbar-collapse" id="navDropdown">
+                <!-- Add a hamburger or sth to go with the collapse or mobile doesn't work -->
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="aboutDropdown" href="#" role="button" data-toggle="dropdown">About Us</a>
+                        <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <a href="./about/message.html">Principal's Message</a>
+                            <a href="./about/values.html">Adventist Education</a>
+                            <a href="./about/whyus.html">Why Us?</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="curriculumDropdown" href="#" role="button" data-toggle="dropdown">Curriculum</a>
+                        <div class="dropdown-menu show" aria-labelledby="curriculumDropdown">
+                            <a href="./curriculum/approach.html">Our Approach</a>
+                            <a href="./curriculum/pre-primary.html">Pre-Primary</a>
+                            <a href="./curriculum/primary.html">Primary</a>
+                            <a href="./curriculum/secondary.html">Secondary</a>
+                            <a href="./curriculum/calendar.html">Calendar</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="admissionDropdown" href="#" data-toggle="dropdown">Admission</a>
+                        <div class="dropdown-menu" aria-labelledby="admissionDropdown">
+                            <a href="./admission/joining.html">How to Apply</a>
+                            <a href="./admission/tours.html">Tours</a>
+                            <a href="./admission/moreinfo.html">More Information</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Slideshow -->
+        <!-- You gotta figure out flexbox man, what with d-flex and all-->
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./slides/img1.png" class="d-block w-100"/>
+                    <div class="carousel-caption">  <!-- Do we seriously need a whole 'nother page for a single message? Let's put it in as a smaller caption, as content instead -->
+                        <a href="./homemessage.html">Glorifying God so that students may have a closer relationship with Him.</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./slides/img2.png" class="d-block w-100"/>
+                    <div class="carousel-caption"> <!-- Like this. Aww, we still have Nicole's statement here even though she's no longer employed? Gotta question the love my job part and update accordingly. -->
+                        Responding to each student’s academic needs so they may reach their full potential.
+                        <div class="small">“Each student that steps into my classroom has a different background, different life experience, and different academic needs. It can be challenging to meet everyone’s needs, as no two students are exactly the same. Sometimes there are frustrations, sometimes there is laughter, and sometimes there are tears. I love all of my students dearly and I want them to succeed in every part of life whether academic or personal. Watching my students grow, develop, and gain new skills is always a pleasure to behold. Even though I may have to put in long hours and use lots of energy, it is always worth it in the end. Being able to interact with my students is a joy, and I always appreciate it when my students respond warmly. I love my job and I love my school.”
+                            --Nicole Castan~on, Grade 3 Homeroom Teacher
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Bootstrap everything-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
